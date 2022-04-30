@@ -1,0 +1,19 @@
+{%include 'head.html'%}
+
+<div class="container">
+<form class="form" method="POST">
+    <div class="mb-3">
+      <label for="endereco" class="form-label">Endereço (Com Cidade)</label>
+      <input type="text" name="endereco" class="form-control" id="endereco">
+      <div id="enderecoHelp" class="form-text">Exemplo: Rua Mauá 333 Rio Grande da Serra</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<div class="container">
+{%include 'map.html'%}
+</div>
+
+</body>
+{%include 'footer.html'%}
