@@ -1,17 +1,19 @@
 {%include 'head.html'%}
 
-<div class="container">
+<body style='margin: 0; background-color: #364258'>
+
+<div class="container" style='justify-content: center;'>
 <form class="form" method="POST">
     <div class="mb-3">
       <label for="endereco" class="form-label">Endereço (Com Cidade)</label>
       <input type="text" name="endereco" class="form-control" id="endereco">
       <div id="enderecoHelp" class="form-text">Exemplo: Rua Mauá 333 Rio Grande da Serra</div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" style='background-color: #6BB680' class="btn">ENVIAR</button>
   </form>
 </div>
 
-<div class="container">
+<div class="container" style='height: 75vh'>
 {%include 'map.html'%}
 </div>
 
