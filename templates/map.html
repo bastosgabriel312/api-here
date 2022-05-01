@@ -26,20 +26,20 @@
           center: { lat: lat, lng: long }  
         });
 		
-	// Habilita os eventos do mapa na instancia
+	// guarda na variavel a instancia dos eventos do mapa
 	  var mapEvents = new H.mapevents.MapEvents(map);
 	
 
 	// Instacia os eventos como comportamento padrão
 	 var behavior = new H.mapevents.Behavior(mapEvents);
 
+        
 	window.addEventListener('resize',()=> get.ViewProt().resize())
-	var marker = new H.map.Marker({ lat: lat, lng: long });
+	var marker = new H.map.Marker({ lat: lat, lng: long } );
 		
-	// Add the marker to the map:
+	// Adiciona o marcador
 	map.addObject(marker);
 	
-	// Create the default UI:
 	var ui = H.ui.UI.createDefault(map, maptypes);
 		
 </script>
